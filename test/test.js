@@ -1,4 +1,8 @@
 
+before("set up DOM", function(){
+  require("./dom")();
+})
+
 var expect = require('chai').expect;
 
 describe('test', function(){
