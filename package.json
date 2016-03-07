@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
-    "compile": "./node_modules/.bin/babel src -d lib"
+    "build": "./node_modules/.bin/babel src -d lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,11 @@
   },
   "homepage": "https://github.com/itsbilal/dorms#readme",
   "dependencies": {
-    "babel-cli": "^6.6.5"
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.6.5",
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
   }
